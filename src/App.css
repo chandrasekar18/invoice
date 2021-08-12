@@ -53,11 +53,12 @@ body{
     background-color: #a1c1dd;
     width: 100%;
     text-align: center;
-    height: 10%;
+    height: 12%;
+    font-weight: bold;
 }
 .canvasStyle
 {
-    height: 90% !important;
+    height: 88% !important;
     width: 100% !important;
 }
 .customer-table{
