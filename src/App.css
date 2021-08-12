@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.header-nav
+{
+    background-color:#000 ;
+    height: 5vh;
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow: hidden;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-text
+{
+    color: #ffffff !important; 
+    font-weight: bold;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-navdrop >a
+{
+    color: white !important;
+}
+.header-text >img{
+    height: 4vh;
+    margin-left: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container >div{
+    flex-basis:32% !important;
+    height: 23vh;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0.375vh;
+    margin-top: 0.375vh;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+}
+body{
+    background-color:#e4e2e2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-container>p{
+    margin: 0px;
+    background-color: #a1c1dd;
+    width: 100%;
+    text-align: center;
+    height: 10%;
+}
+.canvasStyle
+{
+    height: 90% !important;
+    width: 100% !important;
+}
+.customer-table{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+.customer-table>div{
+    flex-basis: 100%;
+}
+.customer-table>div:first-child{
+    height: 20%;
+    background-color: #6490d1;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.customer-table>div:first-child>p{
+    margin: 0px;
+    font-weight: bold;
+}
+.customer-table>div:first-child>p:first-child{
+    flex-basis: 70%;
+}
+.customer-table>div:last-child{
+    overflow: auto;
+    height: 80%;
+    border: 1px solid;
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+.customer-table>div:last-child>div{
+    flex-basis: 100%;
+    display: flex;
+    background-color: #c3f0fa;
+}
+.customer-table>div:last-child>div:nth-child(even){
+    background-color: #65d4eb;
+}
+.customer-table>div:last-child>div>p{
+    margin: 0px;
+    padding: 2px 0px 2px 0px;
+    border-bottom: 1px solid;
+}
+.customer-table>div:last-child>div>p:first-child{
+    flex-basis: 70%;
+    padding-left: 6px;
+    border-right: 1px solid;
+}
+.customer-table>div:last-child>div>p:last-child{
+    flex-basis: 30%;
+    padding-left: 6px;
+}
+.customer-table>div:last-child>div:last-child>p{
+    border-bottom: hidden;
 }
